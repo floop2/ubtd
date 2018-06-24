@@ -1,0 +1,21 @@
+<node>
+<interface name="org.openobex.Agent">
+  <method name="Release">
+  </method>
+  <method name="Request">
+    <arg type="o" name="transfer"/>
+    <arg direction="out" type="s" name="path"/>
+  </method>
+  <method name="Progress">
+    <arg type="o" name="transfer"/>
+    <arg type="i" name="transferred"/>
+  </method>
+  <method name="Complete">
+    <arg type="o" name="transfer"/> 
+  </method>
+  <method name="Error">
+    <arg type="o" name="transfer"/>
+    <arg type="s" name="message"/>
+  </method>                                               
+</interface>
+</node>

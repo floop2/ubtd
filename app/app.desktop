@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Bluetooth File Transfer
+Exec=app
+Icon=app/icon.svg
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+

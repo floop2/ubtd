@@ -1,0 +1,17 @@
+<node>
+<interface name="org.openobex.Agent">
+  <method name="Authorize">                                  
+    <annotation value="" name="org.freedesktop.DBus.GLib.Async"/>
+    <arg type="o" name="transfer"/>
+    <arg type="s" name="bt_address"/>
+    <arg type="s" name="name"/> 
+    <arg type="s" name="type"/>
+    <arg type="i" name="length"/>
+    <arg type="i" name="time"/>
+    <arg direction="out" type="s" name="path"/>
+  </method>
+  <method name="Cancel">
+    <annotation value="" name="org.freedesktop.DBus.GLib.Async"/>
+  </method>                                               
+</interface>
+</node>

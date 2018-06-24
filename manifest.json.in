@@ -1,0 +1,20 @@
+{
+    "name": "ubtd.fourloop2002",
+    "description": "Enables sending and receiving files on your Ubuntu Touch device.  Thanks to Michael Zanetti <michael.zanetti@canonical.com> for the original development of this app.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Bluetooth File Transfer",
+    "hooks": {
+        "app": {
+            "apparmor": "app/app.apparmor",
+            "desktop": "app/app.desktop"
+        },
+        "shareplugin": {
+            "apparmor": "shareplugin/shareplugin.apparmor",
+            "desktop": "shareplugin/shareplugin.desktop",
+            "content-hub": "shareplugin/bluetooth-contenthub.json"
+        }
+    },
+    "version": "0.6",
+    "maintainer": "Ian L <aztecjoe@hotmail.co.uk>",
+    "framework": "ubuntu-sdk-16.04"
+}
