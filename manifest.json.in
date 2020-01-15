@@ -1,6 +1,6 @@
 {
     "name": "ubtd.fourloop2002",
-    "description": "Enables sending and receiving files on your Ubuntu Touch device.  Thanks to Michael Zanetti <michael.zanetti@canonical.com> for the original development of this app.",
+    "description": "Enables sending and receiving files on your Ubports device.  Thanks to Michael Zanetti <michael.zanetti@canonical.com> for the original development of this app.",
     "architecture": "@CLICK_ARCH@",
     "title": "Bluetooth File Transfer",
     "hooks": {
