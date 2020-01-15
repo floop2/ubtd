@@ -20,7 +20,7 @@ MainView {
     Page {
         id: mainPage
         header: PageHeader {
-            title: i18n.tr("Bluetooth file transfer....")
+            title: i18n.tr("Bluetooth file transfer")
             leadingActionBar.actions: []
         }
 
@@ -42,13 +42,13 @@ MainView {
 
                     Label {
                         id: label
-                        text: i18n.tr("Your Ubuntu Touch device is now ready to receive files via Bluetooth...")
+                        text: i18n.tr("Your Ubports device is now ready to receive files via Bluetooth…")
                         fontSize: "large"
                         Layout.fillWidth: true
                         wrapMode: Text.WordWrap
                     }
                     Label {
-                        text: i18n.tr("Send a file via Bluetooth to your Ubuntu Touch phone. It will appear in the list below.")
+                        text: i18n.tr("Send a file via Bluetooth to your Ubports device. It will appear in the list below.")
                         fontSize: "x-small"
                         Layout.fillWidth: true
                         wrapMode: Text.WordWrap
@@ -177,9 +177,9 @@ MainView {
                                 text: {
                                     switch (status) {
                                     case Transfer.StatusQueued:
-                                        return "Waiting...";
+                                        return "Waiting…";
                                     case Transfer.StatusActive:
-                                        return "Transferring...";
+                                        return "Transferring…";
                                     case Transfer.StatusSuspended:
                                         return "Paused"
                                     case Transfer.StatusComplete:
