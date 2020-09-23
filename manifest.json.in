@@ -1,5 +1,5 @@
 {
-    "name": "ubtd.fourloop2002",
+    "name": "ubtd.floop2",
     "description": "Enables sending and receiving files on your Ubuntu Touch device.  Thanks to Michael Zanetti <michael.zanetti@canonical.com> for the original development of this app.",
     "architecture": "@CLICK_ARCH@",
     "title": "Bluetooth File Transfer",
@@ -15,6 +15,6 @@
         }
     },
     "version": "0.6",
-    "maintainer": "Ian L <aztecjoe@hotmail.co.uk>",
+    "maintainer": "floop2 <aztecjoe@hotmail.co.uk>",
     "framework": "ubuntu-sdk-16.04"
 }
