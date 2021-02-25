@@ -18,18 +18,28 @@ MainView {
     BtTransfer {
         id: transfer
     }
+    
+    function contentHubTransfer(transfer) {
+        msgLabel.visible = false
+
+        var tmp = []
+        for (var i = 0; i < transfer.items.length; i++) {
+            var filePath = String(transfer.items[i].url).replace('file://', '')
+            print("Should share file", filePath)
+            tmp.push(filePath);
+        }
+        root.fileNames = tmp
+    }
 
     Connections {
         target: ContentHub
 
         onShareRequested: {
-            var tmp = []
-            for (var i = 0; i < transfer.items.length; i++) {
-                var filePath = String(transfer.items[i].url).replace('file://', '')
-                print("Should share file", filePath)
-                tmp.push(filePath);
-            }
-            root.fileNames = tmp
+            root.contentHubTransfer(transfer)
+        }
+        
+        onImportRequested: {
+            root.contentHubTransfer(transfer)
         }
     }
 
@@ -133,6 +143,16 @@ MainView {
             anchors.fill: parent
             anchors.topMargin: page.header.height + progressBar.height
             columns: width > height ? 2 : 1
+            
+            Label {
+                id: msgLabel
+
+                text: i18n.tr("To send files, open or share them from other apps such as the File Manager")
+                textSize: Label.Large
+                wrapMode: Text.WordWrap
+                Layout.fillWidth: true
+                Layout.margins: units.gu(2)
+            }
 
             Item {
                 Layout.fillWidth: true
