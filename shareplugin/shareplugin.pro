@@ -13,6 +13,7 @@ RESOURCES += shareplugin.qrc
 OTHER_FILES += shareplugin.apparmor \
                shareplugin.desktop \
                icon.svg \
+               splash.svg \
                bluetooth-contenthub.json
 
 #specify where the config files are installed to
