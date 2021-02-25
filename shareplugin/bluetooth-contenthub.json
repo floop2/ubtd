@@ -1,10 +1,14 @@
 {
     "share": [
+        "contacts",
         "documents",
+        "ebooks",
         "pictures",
         "music",
         "contacts",
         "videos"
+    ],
+    "destination": [
+        "all"
     ]
 }
-
