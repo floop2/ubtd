@@ -5,4 +5,5 @@ Icon=app/icon.svg
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
-
+X-Ubuntu-Splash-Color=#0082fb
+X-Ubuntu-Splash-Image=app/splash.svg

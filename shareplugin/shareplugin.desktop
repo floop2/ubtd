@@ -4,6 +4,8 @@ Exec=shareplugin
 Icon=shareplugin/icon.svg
 Terminal=false
 Type=Application
+X-Ubuntu-Splash-Color=#0082fb
+X-Ubuntu-Splash-Image=shareplugin/splash.svg
 X-Ubuntu-Touch=true
 OnlyShowIn=Old
 

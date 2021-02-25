@@ -17,7 +17,8 @@ RESOURCES += app.qrc
 
 OTHER_FILES += app.apparmor \
                app.desktop \
-               icon.svg
+               icon.svg \
+               splash.svg
 
 #specify where the config files are installed to
 config_files.path = /app
